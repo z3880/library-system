@@ -41,43 +41,32 @@
 5. 个人中心：查看本人未归还/已归还借阅记录，支持单本还书操作。
 
 ## 五、项目目录结构（与Eclipse项目完全一致）
-com.library.bean
-├── Admin.java
-├── Book.java
-├── BorrowRecord.java
-└── Reader.java
-
-com.library.servlet
-├── AdminBookServlet.java
-├── AdminLoginServlet.java
-├── AdminReaderServlet.java
-├── BookListServlet.java
-├── BorrowRecordListServlet.java
-├── BorrowServlet.java
-├── LoginServlet.java
-├── LogoutServlet.java
-└── ReturnServlet.java
-
-com.library.util
-└── DBUtil.java
-
-Libraries
-└── JavaScript Resources
-
-build
-
-WebContent
-├── css
-├── META-INF
-└── pages
-├── adminBookList.jsp
-├── adminLogin.jsp
-├── adminReaderList.jsp
-├── bookList.jsp
-├── borrowRecordList.jsp
-├── login.jsp
-└── register.jsp
-
-WEB-INF
-└── db
-└── index.jsp
+library-system/
+├── src/main/java/
+│ ├── com.library.bean/
+│ │ ├── Admin.java
+│ │ ├── Book.java
+│ │ ├── Reader.java
+│ │ └── BorrowRecord.java
+│ ├── com.library.servlet/
+│ │ ├── AdminLoginServlet.java
+│ │ ├── ReaderLoginServlet.java
+│ │ ├── RegisterServlet.java
+│ │ ├── BookServlet.java
+│ │ ├── BorrowServlet.java
+│ │ └── ReturnServlet.java
+│ └── com.library.util/
+│ ├── DBUtil.java
+│ └── MD5Util.java
+├── WebContent/
+│ ├── pages/
+│ │ ├── login.jsp
+│ │ ├── register.jsp
+│ │ ├── admin_book.jsp
+│ │ ├── reader_book.jsp
+│ │ └── reader_record.jsp
+│ ├── css/style.css
+│ ├── js/check.js
+│ └── index.jsp
+├── library_db.sql
+└── README.md
