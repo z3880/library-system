@@ -40,33 +40,4 @@
 4. 图书还书：自动恢复图书库存、更新归还时间，完成借阅流程；
 5. 个人中心：查看本人未归还/已归还借阅记录，支持单本还书操作。
 
-## 五、项目目录结构（与Eclipse项目完全一致）
-library-system/
-├── src/main/java/
-│ ├── com.library.bean/
-│ │ ├── Admin.java
-│ │ ├── Book.java
-│ │ ├── Reader.java
-│ │ └── BorrowRecord.java
-│ ├── com.library.servlet/
-│ │ ├── AdminLoginServlet.java
-│ │ ├── ReaderLoginServlet.java
-│ │ ├── RegisterServlet.java
-│ │ ├── BookServlet.java
-│ │ ├── BorrowServlet.java
-│ │ └── ReturnServlet.java
-│ └── com.library.util/
-│ ├── DBUtil.java
-│ └── MD5Util.java
-├── WebContent/
-│ ├── pages/
-│ │ ├── login.jsp
-│ │ ├── register.jsp
-│ │ ├── admin_book.jsp
-│ │ ├── reader_book.jsp
-│ │ └── reader_record.jsp
-│ ├── css/style.css
-│ ├── js/check.js
-│ └── index.jsp
-├── library_db.sql
-└── README.md
+
